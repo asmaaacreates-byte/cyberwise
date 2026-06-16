@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", "Plus Jakarta Sans", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-cyber-deep: #0a0518;
+  --color-cyber-dark: #120b2e;
+  --color-cyber-purple: #3b0764;
+  --color-cyber-royal: #6b21a8;
+  --color-cyber-glow: #d8b4fe;
+  
+  --animate-pulse-slow: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-glowing-orbit: glowingOrbit 10s ease-in-out infinite alternate;
+  --animate-float: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes glowingOrbit {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+    filter: blur(80px);
+  }
+  50% {
+    transform: translate(30px, -50px) scale(1.2);
+    filter: blur(100px);
+  }
+  100% {
+    transform: translate(-30px, 50px) scale(0.9);
+    filter: blur(80px);
+  }
+}
+
+/* Custom premium scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0d091e;
+}
+::-webkit-scrollbar-thumb {
+  background: #3b0764;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #6b21a8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Glassmorphism helpers */
+.glass-effect-light {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.glass-effect-dark {
+  background: rgba(18, 11, 46, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(139, 92, 246, 0.15);
+}
+
+/* Grid overlay background to make it look highly digital/innovative */
+.cyber-grid-overlay {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(139, 92, 246, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(139, 92, 246, 0.05) 1px, transparent 1px);
+}
+
+.cyber-grid-overlay-light {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(109, 40, 217, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(109, 40, 217, 0.03) 1px, transparent 1px);
+}

@@ -1,0 +1,6 @@
+{
+  "name": "CyberWise Skillversity",
+  "description": "A premium, futuristic, and technology-driven educational platform for CyberWise Skillversity, Perinthalmanna, specializing in digital careers, videography, marketing, and UGC-accredited pathways.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
