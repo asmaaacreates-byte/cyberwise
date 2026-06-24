@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { About } from './components/About';
@@ -144,6 +145,9 @@ export default function App() {
 
       {/* Floating interactive WhatsApp consultant */}
       <WhatsAppButton darkMode={darkMode} />
+
+      {/* Vercel Speed Insights */}
+      <SpeedInsights />
 
     </div>
   );
